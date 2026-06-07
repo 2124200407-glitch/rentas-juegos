@@ -101,3 +101,53 @@ Route::post('/proveedores/actualizar/{id}',
 Route::post('/empleados/actualizar/{id}',
     [EmpleadoController::class,'actualizar'])
     ->name('empleados.actualizar');
+
+
+Route::get('/clientes/mostrar/{id}',
+    [ClienteController::class,'mostrar'])
+    ->name('clientes.mostrar');
+
+
+Route::get('/clientes/borrar/{id}',
+    [ClienteController::class,'borrar'])
+    ->name('clientes.borrar');
+
+    Route::get('/categorias/mostrar/{id}',
+[CategoriaController::class,'mostrar'])
+->name('categorias.mostrar');
+
+Route::get('/categorias/borrar/{id}',
+[CategoriaController::class,'borrar'])
+->name('categorias.borrar');
+
+Route::get('/categorias/mostrar/{id}',
+    [CategoriaController::class,'mostrar'])
+    ->name('categorias.mostrar');
+
+Route::get('/categorias/borrar/{id}',
+    [CategoriaController::class,'borrar'])
+    ->name('categorias.borrar');
+
+    Route::get('/consolas/mostrar/{id}',
+    [ConsolaController::class,'mostrar'])
+    ->name('consolas.mostrar');
+
+Route::get('/consolas/borrar/{id}',
+    [ConsolaController::class,'borrar'])
+    ->name('consolas.borrar');
+
+    Route::get('/proveedores/mostrar/{id}',
+    [ProveedorController::class,'mostrar'])
+    ->name('proveedores.mostrar');
+
+Route::get('/proveedores/borrar/{id}',
+    [ProveedorController::class,'borrar'])
+    ->name('proveedores.borrar');
+
+    Route::get('/empleados/mostrar/{id}',
+    [EmpleadoController::class,'mostrar'])
+    ->name('empleados.mostrar');
+
+Route::get('/empleados/borrar/{id}',
+    [EmpleadoController::class,'borrar'])
+    ->name('empleados.borrar');
